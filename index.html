@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Attention ANR</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/flavicon.png">
+
+    <style>
+
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        z-index: 99;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+      </style>
+
+  </head>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- <div id="navbarr">
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    </div> -->
+    <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="#">Attention</a>
+        <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#header1">SUMMARY OF THE PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications-filler">PUBLICATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#people-filler">PEOPLE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- -->
+  <body class="is-preload">
+    <!-- Header -->
+    <header class="major medium" id="header1">
+      <img
+        src="images/logo_attention.png"
+        alt="Logo of the attention project"
+        style="max-width: 40%; padding-bottom:30px; min-width:300px"
+        />
+        <!-- style="width: 765px; height: 250" -->
+
+      <h3>
+        <span class="bg-light  fs-4"
+          >Detect online disinformation and counter through arguments</span
+        > </h3>
+        <div class="fs-6">
+        <!-- <br /> -->
+        <span class="text-warning">Start date:</span> January 2022 (42 months)
+        <!-- <br /> -->
+        </div>
+        <div class="fs-6">
+        <span  class="text-info">CALL:</span> ANR21-CE23-0037
+        </div>
+        <div class="fs-6" >
+        <span class="text-primary">Funding:</span> 540 890 52 €
+      </div>
+   <br>
+        <!-- <div class="col-md-4"> -->
+        <!-- <img
+            src="images/logo_anr.png"
+            class="img-fluid img-thumbnail"
+            alt=""
+          /> -->
+        <!-- </div> -->
+        <img
+          src="images/logo_anr.png"
+          alt="Logo of the anr"
+          style="width: 10%"
+
+          />
+        <img
+          src="images/logo_eurecom.jpeg"
+          alt="Logo of eurecom"
+          style="width: 10%"
+        />
+        <img
+          src="images/logo_paris1.png"
+          alt="Logo of paris1"
+          style="width: 13%"
+        />
+        <img
+          src="images/logo_CMH.png"
+          alt="Logo of paris1"
+          style="width: 8%"
+        />
+        <img
+          src="images/logo_uca_only.png"
+          alt="Logo of paris1"
+          style="width: 20%"
+        />
+        <img
+          src="images/logo_busterai.png"
+          alt="Logo of paris1"
+          style="width: 10%"
+        />
+        <img
+          src="images/logo_checkstep2.png"
+          alt="Logo of paris1"
+          style="width: 10%"
+        />
+          <!-- style="width: 300px; height: 128px" -->
+
+      <!--
+			<p>
+				Tellus erat mauris ipsum fermentum<br />
+				etiam vivamus nunc nibh morbi.
+			</p> -->
+    </header>
+
+
+
+    <!-- <div style="height: 40px;" id="header1"></div> -->
+
+    <div id="header">
+      <!-- <span class="logo icon fa-paper-plane"></span> -->
+
+      <!-- <h1>Attention</h1> -->
+      <h2 class="bg-primary">Summary of the project</h2>
+      <div class="container-lg fs-6" >
+        <p>
+          The widespread availability of the internet and social media platforms
+          has fundamentally changed the way people consume and share
+          information. In 2016, two-thirds of American adults read news via
+          online channels and the primary platform for online social interaction
+          and transmission of information is now social medium, giving rise to a
+          new challenge:
+        </p>
+        <p>
+          <span class="border-bottom border-danger" style="font-weight: bold"
+            >Online Disinformation</span
+          >
+          which refers to the deliberate spread of false or misleading
+          information online.
+        </p>
+        <p class="border border-success rounded border-3">
+          The primary objectives of this project are:
+        </p>
+        <hr />
+
+        <!-- <ul class="list-group"> -->
+        <!-- <p class="bg-light border border-success">Better identify online disinformation by integrating argumentation in fake news identification</p> -->
+        <p>
+          1. Better identify online disinformation by integrating argumentation
+          in fake news identification
+        </p>
+        <p>
+          2. Instead of blocking, design (semi-)automated systems to generate
+          fact-based counter-arguments to fight against disinformation
+        </p>
+        <p>
+          3. Develop intelligent dialogue systems to debate with users, helping
+          them develop the critical thinking
+        </p>
+
+        <img
+          src="images/architecture.png"
+          class="round"
+          alt="Logo of the anr"
+          style="
+            max-width: 50%;
+            min-width:300px;
+            height: auto;
+            margin-top: 3em;
+            border-radius: 8px;
+          "
+        />
+        <!-- <li class="list-group-item">A second item</li> -->
+        <!-- <li class="list-group-item">A third item</li> -->
+        <!-- <li class="list-group-item">A fourth item</li> -->
+        <!-- <li class="list-group-item">And a fifth one</li> -->
+        <!-- </ul> -->
+      </div>
+    </div>
+
+    <!-- Main -->
+    <!-- <div id="main">
+      <div class="box alt container">
+        <section class="feature left">
+          <a class="image icon solid"
+            ><img src="images/kickoff.jpeg" alt=""
+          /></a>
+          <div class="content">
+            <h3>Dec 2022: Kick-off meeting</h3>
+            <ul style="list-style-type: square">
+              <li>Presentation of the partners institutions</li>
+              <li>General overview of the project and workplans (CNRS-I3S)</li>
+              <li>
+                Presentation of the project scientific WPs for the next 6 months
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="feature right">
+          <a class="image icon solid"><img src="images/pic02.jpg" alt="" /></a>
+          <div class="content">
+            <h3>The Second Meeting Schedule on ...</h3>
+            <p>
+              Vitae natoque dictum etiam semper magnis enim feugiat amet
+              curabitur tempor orci penatibus. Tellus erat mauris ipsum
+              fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.
+            </p>
+          </div>
+        </section>
+        <section class="feature left">
+          <a class="image icon solid"><img src="images/pic03.jpg" alt="" /></a>
+          <div class="content">
+            <h3>The Third Meeting</h3>
+            <p>
+              Vitae natoque dictum etiam semper magnis enim feugiat amet
+              curabitur tempor orci penatibus. Tellus erat mauris ipsum
+              fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!--
+				<div class="box container">
+					<header>
+						<h2>A lot of generic stuff</h2>
+					</header>
+					<section>
+						<header>
+							<h3>Paragraph</h3>
+							<p>This is the subtitle for this particular heading</p>
+						</header>
+						<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+						habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+						leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+						amet risus elit.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Blockquote</h3>
+						</header>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+						tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+					</section>
+					<section>
+						<header>
+							<h3>Divider</h3>
+						</header>
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+						<hr />
+						<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+						ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+						facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+						tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+						posuere cubilia.</p>
+					</section>
+					<section>
+						<header>
+							<h3>Unordered List</h3>
+						</header>
+						<ul class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ul>
+					</section>
+					<section>
+						<header>
+							<h3>Ordered List</h3>
+						</header>
+						<ol class="default">
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+							<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						</ol>
+					</section>
+					<section>
+						<header>
+							<h3>Table</h3>
+						</header>
+						<div class="table-wrapper">
+							<table class="default">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+					<section>
+						<header>
+							<h3>Form</h3>
+						</header>
+						<form method="post" action="#">
+							<div class="row">
+								<div class="col-6 col-12-mobilep">
+									<label for="name">Name</label>
+									<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<label for="email">Email</label>
+									<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+								</div>
+								<div class="col-12">
+									<label for="subject">Subject</label>
+									<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+								</div>
+								<div class="col-12">
+									<label for="subject">Message</label>
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Send" /></li>
+										<li><input type="reset" value="Reset" class="alt" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+				-->
+        <div style="height: 40px;" id="publications-filler"></div>
+
+      <div class="container" style="margin-top: 30px;" id="publications">
+        <h2 class="bg-info" >Publications</h2>
+        <p>
+          Wang, X., Cabrio, E., & Villata, S. (2023, June). Argument and
+          Counter-Argument Generation: A Critical Survey. In
+          <span style="font-style: italic"
+            >International Conference on Applications of Natural Language to
+            Information Systems </span
+          >(pp. 500-510).
+          Cham: Springer Nature Switzerland.
+        </p>
+        <p>Advani, R., Papotti, P., & Asudeh, A. (2023, August). Maximizing Neutrality in News Ordering. In <span style="font-style: italic"
+          >KDD 2023, 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining.</span></p>
+        <p>Badaro, G., Saeed, M., & Papotti, P. (2023). Transformers for Tabular Data Representation: A survey of models and applications. In <span style="font-style: italic"
+          >Transactions of the Association for Computational Linguistics, 11</span>, 227-249.</p>
+      </div>
+      <div style="height: 40px;" id="people-filler"></div>
+
+      <hr />
+
+      <div class="container-md" style="color: #ffffff;" id="people">
+        <h2 class="bg-success">People</h2>
+        <!-- <p>Université Côte d'Azur</p> -->
+        <div class="text-center">
+          <img
+            src="images/logo_uca_cnrs.png"
+            class="img-fluid img-thumbnail"
+            alt=""
+            style="max-width:30%;min-width:350px"
+          />
+        </div>
+        <p></p>
+        <!-- <div class="card-group -columns"> -->
+        <div class="card-group justify-content-center">
+          <div class="card ">
+            <img
+              class="card-img-top"
+              src="people/CABRIO_Elena.jpeg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Elena Cabrio</h6>
+              <p class="card-text text-center text-center">
+                Full Professor at the University of Côte d’Azur and member of the Wimmics Research Team
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/serena.jpeg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Serena Villata</h6>
+              <p class="card-text text-center">
+                Senior researcher (Directrice de recherche) at CNRS, deputy scientific director of the Institute 3IA Côte d’Azur and member of the Wimmics Research Team
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="people/marco.png" alt="Card image" />
+            <div class="card-body text-center">
+              <h6 class="card-title">Marco Winkler</h4>
+              <p class="card-text text-center">Professor at the University of Cote d’Azur and member of the SPARKS/Wimmics Research Team</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/xiaoou_logo_carre.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Xiaoou Wang</h4>
+              <p class="card-text text-center">
+                PhD student at Université Côte d’Azur, Inria,
+                CNRS, I3S and member of the Wimmics Research Team
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/pierpaolo.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Pierpaolo Goffredo</h4>
+              <p class="card-text text-center">
+                3IA PhD student at Université Côte d’Azur,
+                Inria, CNRS, I3S and member of the Wimmics Research Team
+              </p>
+            </div>
+          </div>
+        </div>
+        <p></p>
+
+        <div class="text-center">
+
+          <img
+            src="images/logo_eurecom.jpeg"
+            class="img-fluid img-thumbnail "
+            alt=""
+            style="max-width:15%;min-width:200px"
+          />
+        </div>
+
+        <p></p>
+
+        <div class="card-group justify-content-center" >
+
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/paolo.jpeg"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Paolo Papotti</h4>
+              <p class="card-text text-center">Associate Professor in the Data Science department at EURECOM</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/jf.png"
+              alt="Card image"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Jean-Flavien Bussotti</h4>
+              <p class="card-text text-center">PhD student at EURECOM and Sorbonne Université</p>
+            </div>
+          </div>
+        </div>
+
+        <p></p>
+
+        <div class="text-center">
+
+          <img
+          src="images/logo_paris1.jpeg"
+          class="img-fluid img-thumbnail"
+          alt=""
+            style="max-width:20%;min-width:200px"
+
+
+
+          />
+        </div>
+
+        <p></p>
+
+        <div class="card-group justify-content-center">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="people/celia.png"
+              alt="Card image"
+            />
+            <div class="card-body text-center">
+              <h6 class="card-title">Célia Zolynski</h4>
+              <p class="card-text text-center">Professor of Law at the University Paris 1 Panthéon-Sorbonne and member of the French Commission for Human Rights</p>
+
+            </div>
+          </div>
+
+        </div>
+          <p></p>
+          <div class="text-center">
+
+            <img
+            src="images/logo_CMH.png"
+            class="img-fluid img-thumbnail"
+            alt=""
+            style="max-width:40%;min-width:150px"
+            />
+          </div>
+          <p></p>
+          <div class="card-group justify-content-center">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="people/emmanuel3.png"
+                alt="Card image"
+              />
+              <div class="card-body text-center">
+                <h6 class="card-title">Emmanuel Didier</h4>
+                <p class="card-text text-center">Directeur de recherche CNRS, associate professor ENS-PSL, directeur de l’Institut Santé Numérique en Société</p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="people/paul.png"
+                alt="Card image"
+              />
+              <div class="card-body text-center">
+                <h6 class="card-title">Paul Guille-Escuret</h4>
+                <p class="card-text text-center">PhD student at the Centre Maurice Halbwachs and Sorbonne Université
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <p></p>
+
+
+
+<p></p>
+<div class="text-center">
+
+            <img
+              src="images/logo_busterai.png"
+              class="img-fluid img-thumbnail"
+              alt=""
+            style="max-width:20%;min-width:250px"
+
+            />
+          </div>
+<p></p>
+<div class="card-group justify-content-center">
+  <div class="card">
+    <img
+      class="card-img-top"
+      src="people/julien.png"
+      alt="Card image"
+    />
+    <div class="card-body text-center">
+      <h6 class="card-title">Julien Mardas</h4>
+      <p class="card-text text-center">CEO at Buster.Ai</p>
+    </div>
+  </div>
+  <div class="card">
+    <img
+      class="card-img-top"
+      src="people/xavier.png"
+      alt="Card image"
+    />
+    <div class="card-body text-center">
+      <h6 class="card-title">Xavier Bost</h4>
+      <p class="card-text text-center">Head of Research at Buster.Ai</p>
+    </div>
+  </div>
+  <div class="card">
+    <img
+      class="card-img-top"
+      src="people/julien2.png"
+      alt="Card image"
+    />
+    <div class="card-body text-center">
+      <h6 class="card-title">Julien Plu</h4>
+      <p class="card-text text-center">Research Engineer at Buster.AI</p>
+    </div>
+  </div>
+</div>
+<p></p>
+<div class="text-center">
+            <img
+              src="images/logo_checkstep2.png"
+              class="img-fluid img-thumbnail"
+              alt=""
+            style="max-width:20%;min-width:250px"
+            />
+</div>
+<p></p>
+
+           <div class="card-group justify-content-center">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="people/guillaume.jpeg"
+                  alt="Card image"
+                />
+                <div class="card-body text-center">
+                  <h6 class="card-title">Guillaume Bouchard</h4>
+                  <p class="card-text text-center">Co-Founder and CEO at Checkstep
+</p>
+                </div>
+              </div>
+
+        </div>
+      </div>
+           <div class="card-group justify-content-center">
+              <!-- <div class="card">
+                <img
+                  class="card-img-top"
+                  src="people/lambda.png"
+                  alt="Card image"
+                /> -->
+                <div class="card-body text-center">
+                  <!-- <h6 class="card-title">Guillaume Bouchard</h4> -->
+                  <!-- < class="card-text text-center">Guillaume Bouchard</> -->
+                </div>
+              </div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+              <div style="height: 40px;"></div>
+           <div class="card-group justify-content-center">
+              <!-- <div class="card">
+                <img
+                  class="card-img-top"
+                  src="people/lambda.png"
+                  alt="Card image"
+                /> -->
+                <div class="card-body text-center">
+                  <!-- <h6 class="card-title">Guillaume Bouchard</h4> -->
+                  <!-- <p class="card-text text-center">Guillaume Bouchard</p> -->
+                </div>
+              </div>
+           <div class="card-group justify-content-center">
+              <!-- <div class="card">
+                <img
+                  class="card-img-top"
+                  src="people/lambda.png"
+                  alt="Card image"
+                /> -->
+                <div class="card-body text-center">
+                  <!-- <h6 class="card-title">Guillaume Bouchard</h4> -->
+                  <!-- <p class="card-text text-center">Guillaume Bouchard</p> -->
+                </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container medium">
+        <header class="major last">
+          <h2>Contact</h2>
+        </header>
+
+        <h3>PROJECT COORDINATOR</h3>
+
+        <ul>
+          <!-- <li>
+            <u
+              ><a
+                class="lien_interne"
+                href="https://univ-cotedazur.fr/elena-cabrio"
+                target="_blank"
+                lang="fr"
+                hreflang="fr"
+                dir="ltr"
+                >Elena Cabrio</a
+              ></u
+            >
+          </li> -->
+          <li>
+            <u
+              ><a
+                class="lien_interne"
+                href="https://univ-cotedazur.fr/annuaire/mme-serena-villata"
+                target="_blank"
+                lang="fr"
+                hreflang="fr"
+                dir="ltr"
+                >Serena Villata</a
+              ></u
+            >
+          </li>
+        </ul>
+
+        <ul class="copyright">
+          <!-- <li>&copy; Untitled. All rights reserved.</li> -->
+          <!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      <script>
+        $(document).ready(function() {
+            $( ".nav-link" ).bind( "click", function(event) {
+                <!-- event.preventDefault(); -->
+                var clickedItem = $( this );
+                $( ".nav-link" ).each( function() {
+                    $( this ).removeClass( "active" );
+                });
+                clickedItem.addClass( "active" );
+            });
+        });
+        </script>
+  </body>
+</html>
